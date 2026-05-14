@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbitrum Builder Labs | Block Simulator</title>
+    <meta name="description" content="Interactive block mining simulator demonstrating hashing, nonces, and chain immutability.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">ArbBuilder.</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="concepts.html">Concepts</a>
+            <a href="prices.html">Live Prices</a>
+            <a href="simulator.html">Block Simulator</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero" style="padding-bottom: 2rem;">
+            <h1 class="gradient-text">Block Simulator</h1>
+            <p>Understand proof-of-work, hashing, and immutability. A block is valid if its hash starts with <strong>00</strong>. Try changing the data in Block 1 and watch the chain break.</p>
+        </section>
+
+        <section class="simulator-container">
+            <!-- Block 1 -->
+            <div class="card glass block valid" id="block1">
+                <span class="status-badge" id="block1-status">Valid Block</span>
+                <h2>Block 1 (Genesis)</h2>
+                
+                <div class="input-group">
+                    <label for="block1-data">Data</label>
+                    <textarea id="block1-data" rows="3">Arbitrum Genesis Block Data</textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label for="block1-prev">Previous Hash</label>
+                    <input type="text" id="block1-prev" value="00000000000000000000000000000000" disabled>
+                </div>
+                
+                <div class="input-group" style="display: flex; gap: 1rem; align-items: flex-end;">
+                    <div style="flex: 1;">
+                        <label for="block1-nonce">Nonce</label>
+                        <input type="number" id="block1-nonce" value="0">
+                    </div>
+                    <button class="btn btn-primary" id="block1-mine">Mine Block</button>
+                </div>
+                
+                <div class="hash-output">
+                    <strong>Hash:</strong> <span id="block1-hash">--</span>
+                </div>
+            </div>
+            
+            <div class="chain-link">↓</div>
+
+            <!-- Block 2 -->
+            <div class="card glass block valid" id="block2">
+                <span class="status-badge" id="block2-status">Valid Block</span>
+                <h2>Block 2</h2>
+                
+                <div class="input-group">
+                    <label for="block2-data">Data</label>
+                    <textarea id="block2-data" rows="3">Alice sends 5 ETH to Bob using Arbitrum One.</textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label for="block2-prev">Previous Hash</label>
+                    <input type="text" id="block2-prev" value="" disabled>
+                </div>
+                
+                <div class="input-group" style="display: flex; gap: 1rem; align-items: flex-end;">
+                    <div style="flex: 1;">
+                        <label for="block2-nonce">Nonce</label>
+                        <input type="number" id="block2-nonce" value="0">
+                    </div>
+                    <button class="btn btn-primary" id="block2-mine">Mine Block</button>
+                </div>
+                
+                <div class="hash-output">
+                    <strong>Hash:</strong> <span id="block2-hash">--</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Built for Arbitrum Builder Labs by LamprosDAO</p>
+        <p>Created by ArbBuilder Batch | <a href="https://github.com" target="_blank" style="color: var(--primary);">GitHub Repository</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

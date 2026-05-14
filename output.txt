@@ -1,0 +1,156 @@
+Arbitrum Builder Pods
+Assignment
+📅  Deadline
+Today
+📬  Submit Via
+GitHub
+🛠  Build With
+AI Assistance
+ 
+Objective
+Strengthen your foundational understanding of Web3 concepts by building a multi-page website from scratch. This bridges the gap between theory and hands-on implementation before you move deeper into Web3 development.
+Note: Build the entire website with the help of AI (any AI-native IDE you prefer).
+ Reference PPT: https://canva.link/mqiy5on2c9bzljf
+Task : Build a 4-Page Website
+Your entire assignment is a single deliverable: one cohesive website that contains four pages. Each page covers a distinct Web3 concept as a functional mini-app or informational module.
+The four pages to build:
+Page 1  :  Home / Landing
+Responsive landing page introducing your chosen Web3 theme with hero, features, and footer sections.
+ 
+Page 2  :  Concepts
+Visual comparison cards covering core Web3 concepts (Web2 vs Web3, Ethereum vs Bitcoin, etc.)
+ 
+Page 3  :  Live Prices
+Live crypto price dashboard fetching real-time ETH and BTC data from the CoinGecko API.
+ 
+Page 4  :  Block Simulator
+Interactive block mining simulator that demonstrates hashing, nonces, and chain immutability.
+ 
+Why one website?
+Combining all four pieces into a single navigable site teaches you real project structure - how pages link together, how a codebase is organized, and how to ship something end-to-end. This is how real products are built.
+ 
+Page 1  -  Home / Landing
+Build the main landing page of the website. Pick exactly one theme and make the entire page feel cohesive - not like multiple sections stitched together.
+Pick One Theme
+•         Blockchain / Web3 Introduction
+•         Visual representation of how blocks are connected in a blockchain
+•         Explainer for transactions, blocks, and chains
+•         Arbitrum or Layer 2 overview
+Required Sections
+Header
+Site name / logo and navigation links to all four pages
+Hero / About
+Clearly introduce the topic with a headline and short description
+Features / Benefits
+At least 3 key points with icons or visuals
+Footer
+Your name, GitHub link, batch name
+If You Pick the  “Arbitrum or Layer 2 overview”  Theme  
+Include a short section on this page explaining:
+•         Why Ethereum needed Layer 2 solutions
+•         What Arbitrum is and how it helps
+•         One real-world benefit of using Arbitrum over mainnet
+ 
+📌  Tip
+If you pick the Arbitrum theme, you already have everything you need from the sessions. Use that knowledge directly here.
+ 
+Page 2  -  Concepts
+Build a styled page that presents core Web3 concepts as visual comparison cards or tables. This is your reference page - the first thing visitors see that explains the fundamentals.
+Concepts to Cover
+•         Web2 vs Web3
+•         Ethereum vs Bitcoin
+•         Public Key vs Private Key
+•         Blockchain vs Traditional Databases
+Layout Requirements
+•         Use a card, table, or side-by-side layout for each concept - no plain paragraphs
+•         Write explanations in your own words - simple, clear, and concise
+•         The page should feel like an educational explainer, not a textbook dump
+ 
+Why does this matter ?
+Writing concepts into a visual layout forces deeper understanding. Anyone can paste a definition - building a comparison card means you truly understood both sides.
+ 
+ 
+Page 3  -  Live Prices
+Build a live cryptocurrency price dashboard on this page. Fetch real-time data from the CoinGecko public API - no API key required.
+Required
+•         Fetch live prices for at least ETH and BTC from CoinGecko
+•         Display them in styled cards showing: coin name, current price (USD), 24h price change %
+•         Show a green up arrow or red down arrow based on whether price change is positive or negative
+•         Add a Refresh button to re-fetch data on demand
+Suggested API Endpoint
+https://api.coingecko.com/api/v3/simple/price?ids=ethereum,bitcoin&vs_currencies=usd&include_24hr_change=true
+ 
+Optional Enhancements
+•         Add more coins (e.g., SOL, MATIC, ARB)
+•         Show a mini sparkline or price trend indicator
+•         Add a search bar to look up any coin (optional)
+ 
+Why CoinGecko?
+No API key needed, completely free, and directly relevant to Web3. Fetching ETH/BTC prices is a rite of passage for every Web3 developer.
+ 
+ 
+Page 4  -  Block Simulator
+Build an interactive block mining simulator on this page using plain JavaScript. This is the most hands-on way to understand nonce, hashing, and chain integrity - the concepts from the sessions made tangible.
+What to Build
+•         Input fields for: Block Data (text), Previous Hash (hardcoded or auto-filled), Nonce (number)
+•         A Mine button that increments the nonce until the hash output starts with '00' (simulated proof-of-work)
+•         Display the resulting hash and show Block Valid or Block Invalid
+•         A second block that reads the hash from Block 1 as its Previous Hash - showing the chain
+•         If you change Block 1's data, Block 2 should automatically turn invalid
+Important Notes
+•         No blockchain library needed - pure JavaScript is sufficient
+•         Use a simple string-based fake hash or the built-in Web Crypto API (SHA-256)
+•         The chain-breaking effect when Block 1 changes is the key insight of this page
+ 
+The Core Insight
+When you change data in Block 1, Block 2 breaks. This is immutability in action. Building this with JavaScript will teach you more than any explanation ever could.
+ 
+ 
+Navigation & Structure
+All four pages must be connected via a shared navigation bar. A visitor should be able to move between pages without going back to the repo or manually editing the URL.
+Minimum Navigation Requirements
+•         A header or nav bar present on every page
+•         Links to all four pages accessible from every page
+•         Active page visually highlighted in the nav
+•         Consistent styling across all pages (same fonts, color palette, spacing)
+Tech Stack
+•         HTML / CSS / JavaScript - perfectly acceptable for all four pages
+•         React or Next.js - great choice if you want routing and component reuse
+•         Either way, all four pages should live in one repository
+Submission Guidelines
+Submit all of the following:
+1.      GitHub repository containing the complete website (all four pages)
+2.      Screenshots - at least one screenshot per page (four total)
+3.      A README.md file in the root of the repository
+ 
+README.md Should Include
+•         Project name and a short description of the website
+•         List of all four pages and what each one does
+•         How to install and run the project locally
+•         Any known issues or things you would improve
+Evaluation Criteria
+Criterion
+What We Look For
+Clarity of Concepts (Page 1)
+Are Web3 ideas explained accurately in your own words?
+Functionality
+Do all four pages run without errors?
+Navigation & Cohesion
+Do all pages feel like one unified website, not four separate files?
+UI Structure & Responsiveness
+Is the layout clean, organized, and mobile-friendly?
+Code Organization
+Is your code readable, commented where needed, well-structured?
+Blockchain Simulation (Page 4)
+Does the simulator correctly reflect real Web3 logic?
+Overall Effort
+Does the submission show genuine engagement with the material?
+ 
+ Timeline
+Event
+Date
+Submission Deadline
+Within 2 days 
+ 
+ All the best!
+Every line of code you write this week is a step toward building on Arbitrum.

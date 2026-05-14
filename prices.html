@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbitrum Builder Labs | Live Prices</title>
+    <meta name="description" content="Live cryptocurrency prices dashboard fetching real-time data from CoinGecko.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">ArbBuilder.</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="concepts.html">Concepts</a>
+            <a href="prices.html">Live Prices</a>
+            <a href="simulator.html">Block Simulator</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero" style="padding-bottom: 2rem;">
+            <h1 class="gradient-text">Live Crypto Prices</h1>
+            <p>Real-time data fetched from the CoinGecko API. Watch the market move.</p>
+        </section>
+
+        <section>
+            <div class="refresh-container">
+                <button id="refresh-btn" class="btn btn-secondary">Refresh Data</button>
+            </div>
+            
+            <div class="grid">
+                <!-- Bitcoin Card -->
+                <div class="card glass price-card">
+                    <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png" alt="Bitcoin">
+                    <h3>Bitcoin (BTC)</h3>
+                    <div class="price" id="btc-price">Loading...</div>
+                    <div class="change" id="btc-change">--</div>
+                </div>
+
+                <!-- Ethereum Card -->
+                <div class="card glass price-card">
+                    <img src="https://assets.coingecko.com/coins/images/279/large/ethereum.png" alt="Ethereum">
+                    <h3>Ethereum (ETH)</h3>
+                    <div class="price" id="eth-price">Loading...</div>
+                    <div class="change" id="eth-change">--</div>
+                </div>
+
+                <!-- Arbitrum Card -->
+                <div class="card glass price-card">
+                    <img src="https://assets.coingecko.com/coins/images/16547/large/aleth.png" alt="Arbitrum">
+                    <h3>Arbitrum (ARB)</h3>
+                    <div class="price" id="arb-price">Loading...</div>
+                    <div class="change" id="arb-change">--</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Built for Arbitrum Builder Labs by LamprosDAO</p>
+        <p>Created by ArbBuilder Batch | <a href="https://github.com" target="_blank" style="color: var(--primary);">GitHub Repository</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

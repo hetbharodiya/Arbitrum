@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbitrum Builder Labs | Concepts</title>
+    <meta name="description" content="Visual comparison cards covering core Web3 concepts like Web2 vs Web3, Ethereum vs Bitcoin, and more.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .side {
+            padding: 1.5rem;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--surface-border);
+        }
+        
+        .side h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .side p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">ArbBuilder.</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="concepts.html">Concepts</a>
+            <a href="prices.html">Live Prices</a>
+            <a href="simulator.html">Block Simulator</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero" style="padding-bottom: 2rem;">
+            <h1 class="gradient-text">Core Web3 Concepts</h1>
+            <p>Mastering the foundational differences that power the decentralized internet.</p>
+        </section>
+
+        <section>
+            <!-- Concept 1 -->
+            <div class="card glass" style="margin-bottom: 2rem;">
+                <h2>Web2 vs Web3</h2>
+                <div class="comparison-grid">
+                    <div class="side">
+                        <h4>Web2 (The Read-Write Web)</h4>
+                        <p>Centralized platforms own your data. You create content, but tech giants monetize it. Identity is siloed across different platforms (login with Google/Facebook).</p>
+                    </div>
+                    <div class="side" style="border-color: rgba(0, 255, 204, 0.3);">
+                        <h4 style="color: var(--secondary);">Web3 (The Read-Write-Own Web)</h4>
+                        <p>Decentralized networks where you own your data and digital assets. You interact using a universal digital identity (your wallet) without trusting a central authority.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Concept 2 -->
+            <div class="card glass" style="margin-bottom: 2rem;">
+                <h2>Ethereum vs Bitcoin</h2>
+                <div class="comparison-grid">
+                    <div class="side">
+                        <h4>Bitcoin (Digital Gold)</h4>
+                        <p>A decentralized ledger primarily designed as a peer-to-peer digital currency and a store of value. It has limited scripting capabilities, making it highly secure but less flexible.</p>
+                    </div>
+                    <div class="side" style="border-color: rgba(0, 255, 204, 0.3);">
+                        <h4 style="color: var(--secondary);">Ethereum (World Computer)</h4>
+                        <p>A decentralized computing platform that runs smart contracts. It allows developers to build complex decentralized applications (dApps), creating the foundation for DeFi and NFTs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Concept 3 -->
+            <div class="card glass" style="margin-bottom: 2rem;">
+                <h2>Public Key vs Private Key</h2>
+                <div class="comparison-grid">
+                    <div class="side">
+                        <h4>Public Key (Your Address)</h4>
+                        <p>Like a bank account number. It's safe to share with anyone so they can send you funds. It is cryptographically derived from your private key.</p>
+                    </div>
+                    <div class="side" style="border-color: rgba(0, 255, 204, 0.3);">
+                        <h4 style="color: var(--secondary);">Private Key (Your Password)</h4>
+                        <p>Like the PIN to your bank account. It proves ownership and gives you total control over the funds associated with the public key. <strong>Never share it.</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Concept 4 -->
+            <div class="card glass" style="margin-bottom: 2rem;">
+                <h2>Blockchain vs Traditional DB</h2>
+                <div class="comparison-grid">
+                    <div class="side">
+                        <h4>Traditional Database</h4>
+                        <p>Controlled by a single administrator (client-server architecture). Data can be mutated or deleted easily (CRUD operations). Fast and highly scalable but requires trust.</p>
+                    </div>
+                    <div class="side" style="border-color: rgba(0, 255, 204, 0.3);">
+                        <h4 style="color: var(--secondary);">Blockchain</h4>
+                        <p>Maintained by a distributed network of nodes (peer-to-peer). Data is append-only and immutable. Operations are slower and more expensive, but trustless and censorship-resistant.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Built for Arbitrum Builder Labs by LamprosDAO</p>
+        <p>Created by ArbBuilder Batch | <a href="https://github.com" target="_blank" style="color: var(--primary);">GitHub Repository</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
